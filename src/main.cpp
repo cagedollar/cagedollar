@@ -1658,7 +1658,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
 {
 
-    int64 nSubsidy = 10000000 * COIN;
+    int64 nSubsidy = 1000000000 * COIN;
 
 
 
@@ -1666,7 +1666,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
     if(nHeight < 17280) // 100 block reward within the first 3 days
 
-        nSubsidy = 10000000;
+        nSubsidy = 1000000000;
 
     if(nHeight > 10519200) // no block reward after 5 years
 
@@ -1674,7 +1674,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
 
 
-    return nSubsidy + nSubsidy + nFees;
+    return nSubsidy + nFees;
 
 }
 
@@ -1682,7 +1682,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
 static const int64 nTargetTimespan = 60*60*24*1; // CageDollar: 1 day (readjust difficulty every 1 day)
 
-static const int64 nTargetSpacing = 10; // CageDollar: 10 seconds
+static const int64 nTargetSpacing = 60; // CageDollar: 60 seconds
 
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
