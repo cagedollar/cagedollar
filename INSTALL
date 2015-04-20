@@ -1,9 +1,9 @@
-Building BilfredCoin
+Building CageDollar
 
-See doc/readme-qt.rst for instructions on building bilfredcoin-qt,
+See doc/readme-qt.rst for instructions on building cagedollar-qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of BilfredCoin.
+implementation of CageDollar.
 
-See doc/build-*.txt for instructions on building bilfredcoin,
+See doc/build-*.txt for instructions on building cagedollar,
 the intended-for-services, no-graphical-interface, reference
-implementation of BilfredCoin.
+implementation of CageDollar.

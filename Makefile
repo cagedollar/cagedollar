@@ -277,7 +277,7 @@ first: all
 
 all: Makefile $(TARGET)
 
-$(TARGET): /home/bfcnode1/Documents/BilfredCoin/build/build.h build/ui_sendcoinsdialog.h build/ui_addressbookpage.h build/ui_signverifymessagedialog.h build/ui_aboutdialog.h build/ui_editaddressdialog.h build/ui_transactiondescdialog.h build/ui_overviewpage.h build/ui_sendcoinsentry.h build/ui_askpassphrasedialog.h build/ui_rpcconsole.h build/ui_miningpage.h build/ui_optionsdialog.h $(OBJECTS)  
+$(TARGET): /home/bfcnode1/Documents/CageDollar/build/build.h build/ui_sendcoinsdialog.h build/ui_addressbookpage.h build/ui_signverifymessagedialog.h build/ui_aboutdialog.h build/ui_editaddressdialog.h build/ui_transactiondescdialog.h build/ui_overviewpage.h build/ui_sendcoinsentry.h build/ui_askpassphrasedialog.h build/ui_rpcconsole.h build/ui_miningpage.h build/ui_optionsdialog.h $(OBJECTS)  
 	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile: smallchange-qt.pro  /usr/share/qt4/mkspecs/linux-g++-64/qmake.conf /usr/share/qt4/mkspecs/common/unix.conf \
@@ -353,8 +353,8 @@ distclean: clean
 	-$(DEL_FILE) Makefile
 
 
-/home/bfcnode1/Documents/BilfredCoin/build/build.h: FORCE
-	cd /home/bfcnode1/Documents/BilfredCoin; /bin/sh share/genbuild.sh /home/bfcnode1/Documents/BilfredCoin/build/build.h
+/home/bfcnode1/Documents/CageDollar/build/build.h: FORCE
+	cd /home/bfcnode1/Documents/CageDollar; /bin/sh share/genbuild.sh /home/bfcnode1/Documents/CageDollar/build/build.h
 
 check: first
 

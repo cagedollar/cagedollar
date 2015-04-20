@@ -1,4 +1,4 @@
-BilfredCoin 0.1 ALPHA
+CageDollar 0.1 ALPHA
 
 Copyright (c) 2009-2012 Bitcoin Developers
 Copyright (c) 2011-2012 Litecoin Developers
@@ -12,7 +12,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-BilfredCoin is a free open source peer-to-peer electronic cash system that is
+CageDollar is a free open source peer-to-peer electronic cash system that is
 completely decentralized, without the need for a central server or trusted
 parties.  Users hold the crypto keys to their own money and transact directly
 with each other, with the help of a P2P network to check for double-spending.
@@ -20,14 +20,14 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-You need the Qt4 run-time libraries to run bilfredcoin-qt. On Debian or Ubuntu:
+You need the Qt4 run-time libraries to run cagedollar-qt. On Debian or Ubuntu:
   sudo apt-get install libqtgui4
 
 Unpack the files into a directory and run:
- bin/32/bilfredcoin-qt (GUI, 32-bit)
- bin/32/bilfredcoin (headless, 32-bit)
- bin/64/bilfredcoin-qt (GUI, 64-bit)
- bin/64/bilfredcoin (headless, 64-bit)
+ bin/32/cagedollar-qt (GUI, 32-bit)
+ bin/32/cagedollar (headless, 32-bit)
+ bin/64/cagedollar-qt (GUI, 64-bit)
+ bin/64/cagedollar (headless, 64-bit)
 
 
 See the documentation at the bitcoin wiki:

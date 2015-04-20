@@ -60,7 +60,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 
-uint256 hashGenesisBlock("0x384b060671f4a93948e9c168216dadb0ca2fbc54aa11c86b0345b6af1c59b2f5");
+uint256 hashGenesisBlock("0x");
 
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // starting difficulty is 1 / 2^12
 
@@ -102,7 +102,7 @@ CScript COINBASE_FLAGS;
 
 
 
-const string strMessageMagic = "BilfredCoin Signed Message:\n";
+const string strMessageMagic = "CageDollar Signed Message:\n";
 
 
 
@@ -1658,7 +1658,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
 {
 
-    int64 nSubsidy = 1000000000 * COIN;
+    int64 nSubsidy = 10000000 * COIN;
 
 
 
@@ -1666,7 +1666,7 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
     if(nHeight < 17280) // 100 block reward within the first 3 days
 
-        nSubsidy = 1000000000;
+        nSubsidy = 10000000;
 
     if(nHeight > 10519200) // no block reward after 5 years
 
@@ -1680,9 +1680,9 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 
 
 
-static const int64 nTargetTimespan = 60*60*24*1; // BilfredCoin: 1 day (readjust difficulty every 1 day)
+static const int64 nTargetTimespan = 60*60*24*1; // CageDollar: 1 day (readjust difficulty every 1 day)
 
-static const int64 nTargetSpacing = 10; // BilfredCoin: 10 seconds
+static const int64 nTargetSpacing = 10; // CageDollar: 10 seconds
 
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
@@ -2370,7 +2370,7 @@ bool CTransaction::ConnectInputs(MapPrevTx inputs,
 
     // fBlock is true when this is called from AcceptBlock when a new best-block is added to the blockchain
 
-    // fMiner is true when called from the internal bilfredcoin miner
+    // fMiner is true when called from the internal cagedollar miner
 
     // ... both are false when called from CTransaction::AcceptToMemoryPool
 
@@ -3864,7 +3864,7 @@ bool CheckDiskSpace(uint64 nAdditionalBytes)
 
         printf("*** %s\n", strMessage.c_str());
 
-        uiInterface.ThreadSafeMessageBox(strMessage, "BilfredCoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "CageDollar", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
 
         StartShutdown();
 
@@ -3976,7 +3976,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         pchMessageStart[3] = 0xdb;
 
-        hashGenesisBlock = uint256("0xc8779baf7a34197a0d4e0fde7629189ebccf39974900d831ec77a2148f063e10");
+        hashGenesisBlock = uint256("0x");
 
     }
 
@@ -4092,7 +4092,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
 
-        assert(block.hashMerkleRoot == uint256("0xb60500f7705baa3800883a341248f9073bb8b0409443dea8539ef1c31d4f4a7c"));
+        assert(block.hashMerkleRoot == uint256("0x"));
 
 
 
