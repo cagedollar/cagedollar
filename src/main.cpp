@@ -60,7 +60,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 
-uint256 hashGenesisBlock("0x");
+uint256 hashGenesisBlock("0x3aadfb0a51789d98f396155021120e8685c648d610356b80d09449bfa82b5525");
 
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // starting difficulty is 1 / 2^12
 
@@ -4064,11 +4064,11 @@ bool LoadBlockIndex(bool fAllowNew)
 
         block.nVersion = 1;
 
-        block.nTime    = 1429076944;
+        block.nTime    = 1429513030;
 
         block.nBits    = 0x1e0ffff0;
 
-        block.nNonce   = 386444739;
+        block.nNonce   = 386588823;
 
 
 
@@ -4092,7 +4092,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
 
-        assert(block.hashMerkleRoot == uint256("0x"));
+        assert(block.hashMerkleRoot == uint256("0xb60500f7705baa3800883a341248f9073bb8b0409443dea8539ef1c31d4f4a7c"));
 
 
 
