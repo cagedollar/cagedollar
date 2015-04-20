@@ -1,0 +1,9 @@
+Building BilfredCoin
+
+See doc/readme-qt.rst for instructions on building bilfredcoin-qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of BilfredCoin.
+
+See doc/build-*.txt for instructions on building bilfredcoin,
+the intended-for-services, no-graphical-interface, reference
+implementation of BilfredCoin.
