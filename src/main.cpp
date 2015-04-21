@@ -60,7 +60,7 @@ unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 
-uint256 hashGenesisBlock("0x");
+uint256 hashGenesisBlock("0xc8779baf7a34197a0d4e0fde7629189ebccf39974900d831ec77a2148f063e10");
 
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // starting difficulty is 1 / 2^12
 
