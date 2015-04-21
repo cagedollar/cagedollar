@@ -4092,7 +4092,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
 
-        assert(block.hashMerkleRoot == uint256("0x"));
+        assert(block.hashMerkleRoot == uint256("0xb60500f7705baa3800883a341248f9073bb8b0409443dea8539ef1c31d4f4a7c"));
 
 
 
@@ -4431,6 +4431,7 @@ bool LoadExternalBlockFile(FILE* fileIn)
                 }
 
             }
+
 
         }
 
